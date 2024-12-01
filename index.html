@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quizzy</title>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Css style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="">
+            <div class="container">
+                <div class="nav-width">
+                    <ul class="">
+                        <li class="">
+                            <a class="nav-link" aria-current="page" href="index.html">Quizzy</a>
+                        </li>
+
+                    </ul>
+                    <form class="search-form" role="search">
+                        <input class="search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="container-2">
+            <section>
+                <h1>Choose to the quiz level </h1>
+            </section>
+
+            <!-- quiz level -->
+            <section class="quiz-level">
+                <a class="easy" id="easy" href="#">
+                    <h2>Easy</h2>
+                    <span>Common HTML Questions</span>
+                </a>
+
+                <a class="easy" id="medium" href="#">
+                    <h2>Medium</h2>
+                    <span>Common JavaScript Questions</span>
+                </a>
+
+                <a class="easy" id="hard" href="#">
+                    <h2>Hard</h2>
+                    <span>Common PHP Questions</span>
+                </a>
+            </section>
+
+            <!-- question -->
+            <section class="quiz-part">
+                <div class="questions">
+                    <!-- What type of a language is HTML? -->
+                    <p id="question"></p>
+                    <form class="quizForm" id="answers">
+                        <div class="options" >
+                            <!-- <label><input class="select" type="checkbox" name="answer"> Network Protocol</label>
+                            <label><input class="select" type="checkbox" name="answer"> Scripting Language</label>
+                            <label><input class="select" type="checkbox" name="answer"> Programming Language</label>
+                            <label><input class="select" type="checkbox" name="answer"> Markup Language</label> -->
+                        </div>
+                        <div class="buttons">
+                            <!-- <button type="button" class="btn submit">Submit</button> -->
+                            <!-- <button type="button" class="btn" id="feedback">Correct ✓</button> -->
+                        </div>
+                    </form>
+                </div>
+                <div class="answer">
+                    <!-- <p class="correct-answer">Correct Answer: 1/10</p> -->
+                    <p class="correct_answer"></p>
+                    <p class="incorrect_answer"></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <p>Copyright © 2024</p>
+        </div>
+    </footer>
+
+    <!-- js -->
+     <script src="script.js"></script>
+</body>
+
+</html>
